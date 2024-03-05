@@ -1,0 +1,6 @@
+#Login as admin user
+sudo -s
+su --login
+
+#Get updates then upgrade then clean up
+apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autocleanup
