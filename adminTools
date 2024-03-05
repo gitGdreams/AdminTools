@@ -1,0 +1,7 @@
+#PS session in computer within the network
+Enter-PSsession -ComputerName [computername]
+
+
+#savebitlocker to AD
+manage-bde -protectors -get c:
+magage-bde -protectors -adbackup c: -id [number not the tpm]
