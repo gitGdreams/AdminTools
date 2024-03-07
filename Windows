@@ -11,3 +11,13 @@ quit 1
 #savebitlocker to AD
 manage-bde -protectors -get c:
 magage-bde -protectors -adbackup c: -id [number not the tpm]
+
+###
+scan all protected system files, 
+and replace corrupted files with a cached copy that 
+is located in a compressed folder at %WinDir%\System32\dllcache
+###
+sfc /scannow
+
+# upgrade all apps
+winget upgrade --all
