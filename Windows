@@ -6,7 +6,7 @@ quser
 
 #kick them out
 #    quit [id#]
-quit 1
+logoff 1
 
 #savebitlocker to AD
 manage-bde -protectors -get c:
