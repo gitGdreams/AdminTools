@@ -5,7 +5,7 @@ Enter-PSsession -ComputerName [computername]
 quser
 
 #kick them out
-#    quit [id#]
+#    logoff [id#]
 logoff 1
 
 #savebitlocker to AD
