@@ -74,9 +74,18 @@ chmod +x INSTALL.sh
          anonym8 restore_hostname => Restore Default Hostname                                   
          anonym8 status_hostname  => Show Current Hostname   
 ============================================================================================
-
-
-
-
+#Kalitorify
+cd Desktop
+mkdir kalitorify
+cd kalitorify
+git clone https://github.com/brainfucksec/kalitorify
+sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt-get install -y tor curl
+cd kalitorify/
+sudo make install
+kalitorify -h        
+sudo kalitorify -t
+anonym8 status_ip
+====================================================
 
 
