@@ -84,7 +84,11 @@ sudo apt-get install -y tor curl
 cd kalitorify/
 sudo make install
 kalitorify -h        
+#start the program with -t, stop with -c
 sudo kalitorify -t
+#check public ip
+kalitorify -i
+#but found out that this is more reliable in checking public IP
 anonym8 status_ip
 ====================================================
 
