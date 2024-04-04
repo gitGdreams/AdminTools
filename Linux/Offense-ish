@@ -30,7 +30,9 @@ git clone https://github.com/HiroshiManRise/anonym8.git
 cd anonym8
 chmod +x INSTALL.sh
 ./INSTALL.sh
-anonym8 status_ip
+                anonym8 status_ip
+                anonym8 start
+                anonym8 status_ip
 #commands
         ----[ Tor Tunneling related features ]----                                              
          anonym8 start            => Start Tor Tunneling                                        
