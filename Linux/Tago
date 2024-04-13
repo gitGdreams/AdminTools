@@ -1,0 +1,68 @@
+===================================================================
+#anonym8
+git clone https://github.com/HiroshiManRise/anonym8.git 
+cd anonym8
+chmod +x INSTALL.sh
+./INSTALL.sh
+                anonym8 status_ip
+                anonym8 start
+                anonym8 status_ip
+#commands
+        ----[ Tor Tunneling related features ]----                                              
+         anonym8 start            => Start Tor Tunneling                                        
+         anonym8 stop             => Stop Tor Tunneling                                         
+         anonym8 change           => Changes identity restarting TOR                            
+         anonym8 status           => Tor Tunneling Status                                       
+                                                                                                
+        ----[ IP related features ]----                                                         
+         anonym8 status_ip        => IP status                                                  
+                                                                                                
+        ----[ I2P related features ]----                                                        
+         anonym8 start_i2p        => Start i2p services                                         
+         anonym8 stop_i2p         => Stop i2p services                                          
+         anonym8 status_i2p       => i2p status                                                 
+                                                                                                
+        ----[ privoxy related features ]----                                                    
+         anonym8 start_privoxy    => Start privoxy services                                     
+         anonym8 stop_privoxy     => Stop privoxy services                                      
+         anonym8 status_privoxy   => privoxy status                                             
+                                                                                                
+        ----[ polipo related features ]----                                                     
+         anonym8 start_polipo     => Start polipo services                                      
+         anonym8 stop_polipo      => Stop polipo services                                       
+         anonym8 status_polipo    => Polipo status                                              
+                                                                                                
+        ----[ macchanger related features ]----                                                 
+         anonym8 start_mac        => Start macchanger services                                  
+         anonym8 stop_mac         => Stop macchanger services                                   
+         anonym8 status_mac       => macchanger status                                          
+                                                                                                
+        ----[ arm related features ]----                                                        
+         anonym8 start_arm        => Start Monitoring Anonymizing Relay (arm)                   
+                                                                                                
+        ----[ wipe related features ]----                                                       
+         anonym8 wipe             => cache, RAM & swap-space cleaner                            
+                                                                                                
+        ----[ hostname related features ]----                                                   
+         anonym8 change_hostname  => Randomly Spoofing Hostname                                 
+         anonym8 restore_hostname => Restore Default Hostname                                   
+         anonym8 status_hostname  => Show Current Hostname   
+============================================================================================
+#Kalitorify
+cd Desktop
+mkdir kalitorify
+cd kalitorify
+git clone https://github.com/brainfucksec/kalitorify
+sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt-get install -y tor curl
+cd kalitorify/
+sudo make install
+kalitorify -h     
+    --------------------------------------------------
+#start the program with -t, stop with -c
+sudo kalitorify -t
+#check public ip
+kalitorify -i
+#but found out that this is more reliable in checking public IP
+anonym8 status_ip
+====================================================
