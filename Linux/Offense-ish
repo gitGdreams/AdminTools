@@ -83,7 +83,8 @@ sudo apt-get update && sudo apt-get dist-upgrade -y
 sudo apt-get install -y tor curl
 cd kalitorify/
 sudo make install
-kalitorify -h        
+kalitorify -h     
+    --------------------------------------------------
 #start the program with -t, stop with -c
 sudo kalitorify -t
 #check public ip
