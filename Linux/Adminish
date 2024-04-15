@@ -3,7 +3,7 @@ sudo -s
 su --login
 
 #Get updates then upgrade then clean up
-apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y && apt-get autocleanup -y
+apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y
 
 #or a shorter version of that
 apt-get update -y;apt-get dist-upgrade -y;apt-get autoremove -y;apt-get autoclean -y
