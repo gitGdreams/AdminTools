@@ -1,0 +1,9 @@
+Disable the Internet connection before starting setup, e.g., by disconnecting the LAN cable or disabling Wi-Fi.
+Windows will display a "Let's connect you to a network" or similar screen. The upcoming Windows 11 version 22H2 does not allow you to skip this anymore to create a local account.
+On the screen, use Shift-F10 to open a command prompt window.
+Type OOBE\BYPASSNRO and hit the Enter-key.
+Windows will reboot automatically and return to the "Let's connect you to a network" screen. Only this time, you may select "I don't have Internet" to skip this.
+Then you select "Continue with limited setup" to then create a local account during setup.
+
+
+https://www.ghacks.net/2023/01/26/how-to-bypass-the-microsoft-account-requirement-during-windows-setup/
