@@ -21,3 +21,6 @@ sfc /scannow
 
 # upgrade all apps
 winget upgrade --all
+
+# Verify hash
+Get-FileHash -Path {C:\filePath\file.exe}
