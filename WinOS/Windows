@@ -24,3 +24,6 @@ winget upgrade --all
 
 # Verify hash
 Get-FileHash -Path {C:\filePath\file.exe}
+
+#path to users in registry
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
