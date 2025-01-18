@@ -6,7 +6,7 @@ su --login
 apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y
 
 #or a shorter version of that
-apt-get update -y;apt-get dist-upgrade -y;apt-get autoremove -y;apt-get autoclean -y
+apt-get update -y;apt-get upgrade -y; apt-get dist-upgrade -y;apt-get autoremove -y;apt-get autoclean -y
 
 #install essential build tools and Linux headers matching the current kernel version using the apt package manager. run also to run "make" commands
 apt-get install build-essential linux-header-$( uname -r)
