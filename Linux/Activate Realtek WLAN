@@ -11,3 +11,18 @@ sudo apt install dkms
 
 # if not working, download from github
 git clone https://github.com/aircrack-ng/rtl8812au
+# AND/OR
+git clone https:github.com/{Iforgot}/{somethingWith}/8812au-20210820
+
+cd rtl8812au
+make
+
+# if it keeps getting error, run:
+# use tab to find "amd64" at the end
+sudo apt-get install linux-headers-x.x.x-amd64
+
+# then do
+cd rtl8812au/rtl8812au
+make
+
+
