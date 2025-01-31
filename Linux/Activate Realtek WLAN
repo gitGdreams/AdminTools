@@ -1,0 +1,13 @@
+#check WLAN adapter
+iwconfig
+lsb_release -a
+
+# check if realtek WLAN can be seen
+lsusb
+
+# install driver
+sudo apt install realtek-rtl88xxau-dkms
+sudo apt install dkms
+
+# if not working, download from github
+git clone https://github.com/aircrack-ng/rtl8812au
